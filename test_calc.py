@@ -3,6 +3,7 @@ from calc import Calc
 
 class TestCalc(unittest.TestCase):
 
+
     def setUp(self):
         self.calc = Calc()
 
@@ -17,6 +18,7 @@ class TestCalc(unittest.TestCase):
 
     def test_div(self):
         self.assertEqual(self.calc.div(10, 2), 5)
+        self.assertEqual(self.calc.div(3, 2), 1.5)
 
     def test_pow(self):
         self.assertEqual(self.calc.pow(2, 3), 8)
